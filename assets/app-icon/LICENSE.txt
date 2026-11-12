@@ -1,0 +1,10 @@
+NOVA PDF app icon (novapdf.svg and every file derived from it in this directory:
+novapdf-1024.png, novapdf.icns, novapdf.ico, hicolor/).
+
+Original artwork made for NOVA Workspace: a violet rounded square with a white "N".
+No third-party material. Licensed like the rest of NOVA PDF, under either of
+
+  * Apache License, Version 2.0 (https://www.apache.org/licenses/LICENSE-2.0)
+  * MIT license (https://opensource.org/licenses/MIT)
+
+at your option.

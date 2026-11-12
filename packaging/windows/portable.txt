@@ -1,0 +1,9 @@
+NOVA PDF portable mode
+
+While this file sits next to pdfcraft.exe, NOVA PDF keeps its settings, log files, crash-recovery
+autosaves and new digital IDs in the NOVA PDFData folder beside it, and writes nothing to
+%APPDATA% or %LOCALAPPDATA%. Copy the whole folder to move NOVA PDF with its settings.
+
+Delete this file to use the normal per-user folders (%APPDATA%\NOVA PDF and
+%LOCALAPPDATA%\NOVA PDF) instead. If NOVA PDFData can't be written (for example on a read-only
+drive), NOVA PDF says so and uses the per-user folders instead.

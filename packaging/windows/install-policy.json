@@ -1,0 +1,329 @@
+{
+  "id": "pdfcraft",
+  "name": "NOVA PDF",
+  "upgradeCode": "EA00C367-7270-4C50-9D8B-A7A5C88AD27F",
+  "sources": [
+    "pdfcraft.wxs",
+    "installer-ui.wxs"
+  ],
+  "icon": "assets/app-icon/pdfcraft.ico",
+  "localization": [],
+  "extensions": [],
+  "payloads": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "LICENSE-document.txt",
+    "NOTICE",
+    "pdfcraft-cli.exe",
+    "pdfcraft.exe"
+  ],
+  "registry": [
+    [
+      "-1",
+      "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\pdfcraft.exe",
+      "",
+      "[#PdfcraftExe]"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\NOVA PDF.Document",
+      "",
+      "PDF Document"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\NOVA PDF.Document\\DefaultIcon",
+      "",
+      "\"[#PdfcraftExe]\",-2"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\NOVA PDF.Document\\shell\\open\\command",
+      "",
+      "\"[#PdfcraftExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\NOVA PDF.Document",
+      "TypeOverlay",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\.pdf\\OpenWithProgids",
+      "NOVA PDF.Document",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\pdfcraft.exe",
+      "FriendlyAppName",
+      "NOVA PDF"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\pdfcraft.exe\\DefaultIcon",
+      "",
+      "\"[#PdfcraftExe]\",-2"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\pdfcraft.exe\\SupportedTypes",
+      ".pdf",
+      ""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\Applications\\pdfcraft.exe\\shell\\open\\command",
+      "",
+      "\"[#PdfcraftExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Capabilities",
+      "ApplicationName",
+      "NOVA PDF"
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Capabilities",
+      "ApplicationDescription",
+      "Open-source PDF workbench"
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Capabilities",
+      "ApplicationIcon",
+      "[#PdfcraftExe],0"
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Capabilities\\FileAssociations",
+      ".pdf",
+      "NOVA PDF.Document"
+    ],
+    [
+      "-1",
+      "Software\\RegisteredApplications",
+      "NOVA PDF",
+      "Software\\NOVA PDF\\Capabilities"
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Shortcuts",
+      "StartMenu",
+      "#1"
+    ],
+    [
+      "-1",
+      "Software\\NOVA PDF\\Shortcuts",
+      "Desktop",
+      "#1"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.pdf\\shell\\NOVA PDF.Edit",
+      "",
+      "Edit with NOVA PDF"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.pdf\\shell\\NOVA PDF.Edit",
+      "Icon",
+      "\"[#PdfcraftExe]\",0"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.pdf\\shell\\NOVA PDF.Edit",
+      "MultiSelectModel",
+      "Document"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.pdf\\shell\\NOVA PDF.Edit\\command",
+      "",
+      "\"[#PdfcraftExe]\" \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.png\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.png\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.png\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpg\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpg\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpg\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpeg\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpeg\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpeg\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tif\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tif\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tif\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tiff\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tiff\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.tiff\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.gif\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.gif\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.gif\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.bmp\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.bmp\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.bmp\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jp2\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jp2\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jp2\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.j2k\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.j2k\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.j2k\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpx\\shell\\NOVA PDF.CreatePdf",
+      "",
+      "Create PDF with NOVA PDF\u2026"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpx\\shell\\NOVA PDF.CreatePdf",
+      "MultiSelectModel",
+      "Single"
+    ],
+    [
+      "-1",
+      "Software\\Classes\\SystemFileAssociations\\.jpx\\shell\\NOVA PDF.CreatePdf\\command",
+      "",
+      "\"[#PdfcraftExe]\" --create-images \"%1\""
+    ]
+  ],
+  "mode": "dualScope"
+}
